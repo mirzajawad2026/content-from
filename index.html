@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="main" autocomplete="on">
+        <!-- content -->
+        <section class="content">
+            <h3>Content US</h3>
+        </section>
+        <!-- First_last name inputs -->
+        <section class="input_sec">
+            <div class="first_name_div">
+                <label for="First_name">First Name</label><br>
+                <input type="text" name="First_name" class="name_input" required><br>
+                <span class="sapn1"></span>
+            </div>
+            <div class="last_name_div">
+                <label for="last_name">Last Name</label><br>
+                <input type="text" name="last_name" class="name_input" required><br>
+                <span class="sapn2"></span>
+
+            </div>
+        </section>
+        <!-- Email_input -->
+        <section class="email_input_sec">
+            <label for="Email_input">Email</label><br>
+            <input type="email" name="Email_input" id="Email_input" required><br>
+                <span class="sapn3"></span>
+
+        </section>
+
+        <!-- query type -->
+        <div class="quey_main_div">
+            <section class="content">
+                <p class="query_content">Query Type</p>
+            </section>
+            <section class="query_type_sec">
+                <!-- general enquiry -->
+                <div class="general_enquiry_div">
+                    <input type="radio" name="general_enquiry" class="query_general_radio radio">
+                    <label for="general_enquiry" class="radio_label">General Enquiry</label>
+                </div>
+                <!-- Support Request -->
+                <div class="support_request_div">
+                    <input type="radio" name="support_request" class="support_request_radio radio">
+                    <label for="support_request" class="radio_label">Support Request</label>
+                </div>
+            </section>
+        </div>
+
+        <!-- Message Area -->
+        <section class="message_section">
+            <label for="message_input">Message</label><br>
+            <input type="text" name="message_input" id="message_input" required><br>
+                <span class="sapn4"></span>
+
+        </section>
+
+        <!-- selection area -->
+        <section class="selection_area">
+            <input type="checkbox" name="checkbox" id="check_box" required>
+            <label for="checkbox" class="check_label">I consent to beingconnect by the team</label>
+        </section>
+
+        <!-- submit type -->
+        <input type="submit" value="Submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
